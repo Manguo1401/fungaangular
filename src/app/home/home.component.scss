@@ -9,17 +9,21 @@
   height: 100vh;
   overflow: hidden;
   position: relative;
-
 }
 
 .hsContent {
-  max-width: 450px;
+  max-width: 750px;
   margin: -150px auto 0 auto;
   display: table-cell;
   vertical-align: middle;
   color: $main-color;
   padding: 0 8%;
-  text-align: center
+  text-align: center;
+  position: relative;
+  top: 500px;
+  // background-color: rgba(0, 0, 0, .5);
+  // border-radius: 100px;
+  // border-left: 0px;
 }
 
 .bcg {
@@ -31,14 +35,50 @@
   width: 100%;
 }
 
+.titleshadow{
+  height: 0px;
+  position: relative;
+  top:-55px;
+  box-shadow: 0px 0px 150px 30px rgba(0,0,0,1);
+  z-index: 10;
+}
+.titleshadow2{
+  height: 8px;
+  position: relative;
+  top:-52px;
+  box-shadow: 0px 0px 150px 30px rgba(0,0,0,1);
+  z-index: 10;
+}
+.titleshadow3{
+  height: 10px;
+  position: relative;
+  top:-54px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 150px 30px rgba(0,0,0,1);
+  z-index: 10;
+}
+.texttitle{
+  position: relative;
+  z-index: 11;
+}
+.pagetitle{
+
+  display: block;
+  // -webkit-box-shadow: 0px 0px 144px 0px rgba(0,0,0,1);
+  // -moz-box-shadow: 0px 0px 144px 0px rgba(0,0,0,1);
+  // box-shadow: 0px 0px 144px 0px rgba(0,0,0,1);
+  padding: 10px;
+  
+}
+
 /* Slide 1 */
 
 #slide-1 .bcg {
-  background-image: url('http://placekitten.com/g/600/600')
+  background-image: url("/assets/img/IMG_2187.JPG")
 }
 
 #slide-3 .bcg {
-  background-image: url('http://placekitten.com/g/600/600')
+  background-image: url("/assets/img/GOPR2346.JPG")
 }
 
 #slide-3 .hscontainer {
