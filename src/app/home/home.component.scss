@@ -48,6 +48,8 @@
   top:-52px;
   box-shadow: 0px 0px 150px 30px rgba(0,0,0,1);
   z-index: 10;
+  width: 730px;
+  margin: auto;
 }
 .titleshadow3{
   height: 10px;
@@ -61,8 +63,25 @@
   position: relative;
   z-index: 11;
 }
-.pagetitle{
 
+.bulleshadow{
+  color: #ad8f5a;
+  height: 0px;
+  box-shadow: 0px 0px 60px 30px lightgoldenrodyellow;
+  z-index: 1;
+  position: relative;
+  top:-12px;
+}
+.bulletitle{
+  z-index: 2;
+  position: relative;
+}
+.bulle{
+  position:absolute;
+}
+
+
+.pagetitle{
   display: block;
   // -webkit-box-shadow: 0px 0px 144px 0px rgba(0,0,0,1);
   // -moz-box-shadow: 0px 0px 144px 0px rgba(0,0,0,1);
@@ -150,6 +169,12 @@ h4 a {
 
 .devs-title {
   padding-top: 20px;
+    color: white;
+    position: relative;
+    z-index: 11;
+    width: 730px;
+    margin: auto;
+    margin-bottom: 55px;
 }
 
 .card-body {
