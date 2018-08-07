@@ -1,8 +1,8 @@
 <!-- HTML -->
 <section id="slide-1" class="homeSlide">
-  <div class="bcg" data-center="background-position: 50% 0px;" data-bottom-top="background-position: 50% 650px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
+  <div class="bcg" data-start="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
     <div class="hsContainer">
-      <div class="hsContent pagetitle" data-center="opacity: 1;bottom:0%;" data-106-top="opacity: 0;bottom:50%;" data-anchor-target="#slide-1 h2">
+      <div class="hsContent pagetitle" data-start="top:500px;opacity: 1;" data-500-start="opacity: 1;top:800px" data--200-top="opacity: 0;top:800px" data-anchor-target="#slide-1 h2">
         <div class="texttitle">
           <h1>FUNGA, développeurs web fullstack</h1>
           <h2>Louis et Aaron créeront votre site selon vos envies</h2>
@@ -48,7 +48,7 @@
     <h1 style="position:relative;" data-100-bottom="left:-2000px;" data--100-bottom="left:0px;">Nos services</h1>
   </div>
   <div class="row mx-1 justify-content-md-center">
-    <div style="position:relative;" data-100-bottom="left:-2000px;" data--100-bottom="left:0px;" class="col-sm-6 col-xl-3 mb-4">
+    <div style="position:relative;" data-100-bottom="left:-2000px;" data--200-bottom="left:0px;" class="col-sm-6 col-xl-3 mb-4">
       <div class="card h-100">
         <div class="card-body">
             <div class="icon-title"><i class="fas fa-flask"></i></div>
@@ -57,7 +57,7 @@
         </div>
       </div>
     </div>
-    <div style="position:relative;" data-100-bottom="top:-2000px;" data--100-bottom="top:0px;"  class="col-sm-6 col-xl-3 mb-4">
+    <div style="position:relative;" data-100-bottom="left:-2000px;" data--100-bottom="left:0px;"  class="col-sm-6 col-xl-3 mb-4">
       <div class="card h-100">
         <div class="card-body">
           <div class="icon-title"><i class="fas fa-pencil-alt"></i></div>
@@ -66,7 +66,7 @@
         </div>
       </div>
     </div>
-    <div style="position:relative;" data-100-bottom="left:2000px;" data--100-bottom="left:0px;"  class="col-sm-6 col-xl-3 mb-4">
+    <div style="position:relative;" data-100-bottom="left:-2000px;" data--10-bottom="left:0px;"  class="col-sm-6 col-xl-3 mb-4">
       <div class="card h-100">
         <div class="card-body">
           <div class="icon-title"><i class="fas fa-code"></i></div>
@@ -119,7 +119,9 @@
         <div class="card project-card">
           <div class="img-container">
             <img class="cadre-top" src="assets/img/projects/cadre.png" alt="Card image cap">
-            <img class="img-top" src="assets/img/projects/tsiono.png" alt="Card image cap">
+            <div  class="img-top" style="background-color: black;display: flex;">
+              <img style="margin:auto;" data--100-bottom="width: 0%;height: 0%;" data--250-bottom="width: 100%;height: 1%;" data--300-bottom="height: 100%;" src="assets/img/projects/tsiono.png" alt="Card image cap">
+            </div>
           </div>
           <div class="card-body">
             <h4 class="card-title"><a>Tsiono</a></h4>
@@ -150,7 +152,10 @@
         <div class="card project-card">
           <div class="img-container">
             <img class="cadre-top" src="assets/img/projects/cadre.png" alt="Card image cap">
-            <img class="img-top" src="assets/img/projects/open.png" alt="Card image cap">
+            <!-- <img class="img-top" src="assets/img/projects/open.png" alt="Card image cap"> -->
+            <div  class="img-top" style="background-color: black;display: flex;">
+              <img style="margin:auto;" data--140-bottom="width: 0%;height: 0%;" data--290-bottom="width: 100%;height: 1%;" data--330-bottom="height: 100%;" src="assets/img/projects/open.png" alt="Card image cap">
+            </div>
           </div>
           <div class="card-body">
             <h4 class="card-title"><a>Open Sciences Participatives</a></h4>
@@ -181,6 +186,6 @@
     </div>
   </div>
 </section>
-<section>
+<section style="position:relative;" data-100-bottom="left:-2000px;" data--100-bottom="left:0px;">
   <app-contact-form></app-contact-form>
 </section>
