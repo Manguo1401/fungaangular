@@ -1,58 +1,59 @@
-<div class="presentation-container">
-  <div class="photo-aaron" (mouseenter)="aaron = 'active'" (mouseleave)="aaron = 'inactive'">
-    <div class="description-aaron" [@fader]="aaron">
-      <h2>Aaron Hartnell, développeur web full-stack</h2>
-      <h4>Description</h4>
+<div class="presentation-container row">
+  <div class="block-aaron col-sm-6">
+
+    <div class="description description-aaron">
+      <div class="d-flex flex-row">
+        <div class="portrait">
+          <img class="portrait-img portrait-aaron" src="assets/img/presentation/aaron.jpg" alt="Card image cap">
+        </div>
+        <h2 class="align-self-center mx-auto">Aaron Hartnell, développeur web full-stack</h2>
+      </div>
+      <h4 class="mt-3">Description</h4>
       <p>Bonjour, mon nom est Aaron Hartnell. Je suis un auto-entrepreneur franco-anglais spécialisé et passioné dans le développement
-        web full-stack. Mon cursus professionnel et universitaire avec un master en géomatique m'ont apporté des clés solides pour
-        répondre aux problématiques que peut avoir un site web à fonctionnalités complexes. La performance et la structure du code et de la
-        base de données sont mes priorités lorsque je développe afin d'obtenir une performance optimale lors de la mise en ligne
-        de votre site web et de la vitesse de son chargement. </p>
-      <p>Avide de connaitre les dernières avancées sur le web, je cherche toujours les nouvelles technologies pour les sites web de
-        demain. Je priviligie toujours l'écoute du client et me concentre à apporter la meilleure solution en fonction de son budget
-        et objectif. Etant bilingue anglais/français je peux aussi traduire votre site dans la langue de Shakespeare.</p>
+        web full-stack. Mon cursus professionnel et universitaire avec un master en géomatique m'ont apporté des clés solides
+        pour répondre aux problématiques que peut avoir un site web à fonctionnalités complexes. La performance et la structure
+        du code et de la base de données sont mes priorités lorsque je développe afin d'obtenir une efficacité optimale
+        lors de la mise en ligne de votre site web et de la vitesse de son chargement. </p>
+      <p>Avide de connaitre les dernières avancées sur le web, je cherche toujours les nouvelles technologies pour les sites
+        web de demain. Je priviligie toujours l'écoute du client et me concentre à apporter la meilleure solution en fonction
+        de son budget et objectif. Etant bilingue anglais/français je peux aussi traduire votre site dans la langue de Shakespeare.</p>
       <p>Je suis actuellement basé dans le Golfe du Morbihan mais je n'hésite pas à me déplacer si c'est nécessaire.</p>
-      <h4>Langages et librairies utilisés</h4>
-      <ul>
-        <li>Angular 2/6, Node.js, Express</li>
-        <li>Symfony 3</li>
-        <li>OpenLayers 4, Leaflet</li>
-        <li>D3.js, Charts.js</li>
-        <li>JQuery</li>
-        <li>Bootstrap 4, CSS GRID</li>
-        <li>MySQL, PostreSQL</li>
-        <li>MongoDB</li>
-        <li>...</li>
-      </ul>
+
       <h4>Contact</h4>
-      Email: <a href="mailto:aaronleehartnell@gmail.com">aaronleehartnell@gmail.com</a><br/>
-      Téléphone: <a href="tel:+262 6 39 09 27 62">+262 6 39 09 27 62</a>
+      Email:
+      <a href="mailto:aaronleehartnell@gmail.com">aaronleehartnell@gmail.com</a>
+      <br/> Téléphone:
+      <a href="tel:+262 6 39 09 27 62">+262 6 39 09 27 62</a>
     </div>
   </div>
-  <div class="photo-louis" (mouseenter)="louis = 'active'" (mouseleave)="louis = 'inactive'">
-    <div class="description-louis" [@fader]="louis">
-      <h2>Louis Watrin, ingénieur informatique</h2>
-      <h4>Description</h4>
-      <p>Pour les présentations, je suis Louis Watrin, issu d’un Master Informatique spécialisé dans l’Interface Homme Machine dont l’objectif principal est de répondre au mieux aux attentes des futurs utilisateurs.<br>
-        J’ai eu une évolution rapide en entreprise pour le compte d’Airbus, avec de plus en plus de casquettes, de développeur à concepteur en relation directe avec le client, puis chef de projet.<br>
-        J’ai ensuite souhaité mettre à profit mes compétences en développement web sur des projets étant alignés avec une perspective collaborative pour notre futur, mettant ainsi en valeur les nouvelles technologies, mes acquis et ma créativité.
-        Je me suis lancé dans la création de plateforme grand public sur plusieurs domaines :</p>
+  <div class="block-louis col-sm-6">
+    <div class="description description-louis">
+      <div class="d-flex flex-row-reverse">
+        <div class="portrait">
+          <img class="portrait-img portrait-louis" src="assets/img/presentation/Louis.jpg" alt="Card image cap">
+        </div>
+        <h2 class="align-self-center mx-auto">Louis Watrin, ingénieur informatique</h2>
+      </div>
+      <h4 class="mt-3">Description</h4>
+      <p>J'ai un Master 2 Informatique spécialisé dans l’Interface Homme Machine
+        dont l’objectif principal est de répondre au mieux aux attentes des futurs utilisateurs.
+        Mon sérieux m'a permis une évolution rapide en entreprise pour le compte d’Airbus, de développeur
+        à concepteur en relation directe avec le client, puis chef de projet MOE.
+        <br> J’ai ensuite souhaité mettre à profit mes compétences en développement web sur des projets étant alignés avec une
+        perspective collaborative pour notre futur, mettant ainsi en valeur les nouvelles technologies, mes acquis et ma
+        créativité. Je me suis lancé dans la création de plateforme grand public sur plusieurs domaines :</p>
       <ul>
         <li>L’accessibilité à tout type d’Art.</li>
         <li>Le partage de connaissance sur la permaculture.</li>
         <li>Le suivi des lois et débat publique.</li>
         <li>L’observation des espèces par les sciences participatives.</li>
       </ul>
-      <p>Ce dernier projet conçu avec Aaron a suscité l’intérêt du MNHN (Muséum National d’Histoire Naturelle). Nous avons pu travailler avec eux afin de créer leur portail de sciences participatives OPEN qui complète les objectifs de notre projet initial.</p>
-      <p>Maintenant auto-entrepreneur dans la création de sites web, nous proposons de créer votre site selon vos besoins. Nos compétences complémentaires couvrent l’ensemble des domaines pour la création de sites, du plus simple au plus complexe.</p>
-      <h4>Interface</h4>
-      <ul>
-        <li>Prototypage / Maquettage, Utilisabilité, Ergonomie, Tests Utilisateurs</li>
-      </ul>
-      <h4>Développement</h4>
-      <ul>
-        <li>.NET 4.0, Symphony 2-4, Zend, PHP7, Angular 2-4, HTML5, CSS3 ..</li>
-      </ul>
+      <p>Ce dernier projet conçu avec Aaron a suscité l’intérêt du MNHN (Muséum National d’Histoire Naturelle). Nous avons pu
+        travailler avec eux afin de créer leur portail de sciences participatives OPEN qui complète les objectifs de notre
+        projet initial.</p>
+      <p>Maintenant auto-entrepreneur dans la création de sites web, nous proposons de créer votre site selon vos besoins. Nos
+        compétences complémentaires couvrent l’ensemble des domaines pour la création de sites, du plus simple au plus complexe.</p>
+
       <h4>Contact</h4>
       Email:
       <a href="mailto:louis.watrin@gmail.com">louis.watrin@gmail.com</a>
@@ -60,4 +61,35 @@
       <a href="tel:+33 6 84 32 29 11">+336 84 32 29 11</a>
     </div>
   </div>
+
+</div>
+
+<div class="block-langage col-sm-8 mx-auto">
+    <hr>
+    <div class="mx-auto">
+      <h4>Langages et librairies utilisés</h4>
+      <ul>
+        <li>Angular 2/6, Node.js, Express</li>
+        <li>Symfony 2/4, PHP 7</li>
+        <li>OpenLayers 4, Leaflet</li>
+        <li>JQuery, D3.js, Charts.js</li>
+        <li>HTML 5, CSS 3, Bootstrap 4, CSS GRID</li>
+        <li>MySQL, PostreSQL, MongoDB</li>
+        <li>...</li>
+      </ul>
+    </div>
+    <hr>
+    <div class="mx-auto">
+      <h4>Compétences projet</h4>
+      <ul>
+        <li>Devis & planification</li>
+        <li>Méthodologie Agile, Itératif, Incrémentale</li>
+        <li>Prototypage / Maquettage</li>
+        <li>Evaluation Utilisabilité, Amélioration ergonomique</li>
+        <li>Tests Utilisateurs</li>
+      </ul>
+    </div>
+    <br>
+    <br>
+    <br>
 </div>
