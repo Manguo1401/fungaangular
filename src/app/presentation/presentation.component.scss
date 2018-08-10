@@ -65,25 +65,27 @@ a:hover {
 }
 
 .portrait{
-    position: relative;
-    border-radius: 470px;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
+    // position: relative;
+    // border-radius: 470px;
+    // width: 200px;
+    // height: 200px;
+    // overflow: hidden;
     
 }
 
 .portrait-img{
     position: relative;
+    border-radius: 470px;
 }
 
 .portrait-aaron{
-
+    
 }
 
 .portrait-louis{
-    width: 230px;
-    left: -10px;
+    width: 200px;
+    
+    // left: -10px;
 }
 
 .abs-portrait{
