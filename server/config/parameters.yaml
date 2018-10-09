@@ -1,0 +1,4 @@
+parameters:
+    env(MAILER_URL): smtp://fungadev@gmail.com:fung@D3V@smtp.gmail.com:465?encryption=ssl
+    env(CORS_ALLOW_ORIGIN): ^https?://(www\.)?funga.fr$
+    env(USER_EMAIL): "fungadev@gmail.com"
