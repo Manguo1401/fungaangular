@@ -3,24 +3,43 @@
   <div class="row justify-content-center">
     <div class="col-10">
       <p>Pour un site vitrine ou un projet complet, demandez un devis.</p>
-      <form>
+      <form ngForm #form="ngForm" (ngSubmit)="submitContactForm(form)" >
         <div class="row">
           <div class="form-group md-form col-6 mx-0 px-2">
             <label for="name">Nom</label>
-            <input type="text" class="form-control" id="name" mdbInputDirective required>
+            <input minlength="3" ngModel name="name" #name="ngModel" type="text" class="form-control" id="name" mdbInputDirective required>
+            <div class="alert alert-danger" *ngIf="!name.valid && name.touched" >
+              <div *ngIf="name.errors.required" >Votre nom est requis</div>
+              <div *ngIf="name.errors.minlength" >Votre nom doit avoir un minimum de {{name.errors.minlength.requiredLength}} caratères</div>
+              
+            </div>
+            
           </div>
           <div class="form-group md-form  col-6 mx-0 px-2">
             <label for="email">Email</label>
-            <input type="text" class="form-control" id="email" mdbInputDirective required>
+            <input email ngModel name="email" #email="ngModel" type="text" class="form-control" id="email" mdbInputDirective required>
+            <div class="alert alert-danger" *ngIf="!email.valid && email.touched" >
+                <div *ngIf="email.errors.required" >Votre email est requis</div>
+                <div *ngIf="email.errors.email" >Votre adresse Email doit être sous la forme xx@xx.xx</div>
+                
+              </div>
           </div>
         </div>
 
         <div class="form-group md-form px-2">
           <label for="message">Message</label>
-          <textarea type="textarea" rows="10" mdbInputDirective class="form-control md-textarea" id="message"></textarea>
+          <textarea ngModel name="message" #message="ngModel" 
+          type="textarea" rows="10" mdbInputDirective 
+          minlength="10" maxlength="5000"
+          class="form-control md-textarea" id="message" required
+          ></textarea>
+          <div class="alert alert-danger" *ngIf="!message.valid && message.touched" >
+              <div *ngIf="message.errors.required" >Le message est requis est requis</div>
+              <div *ngIf="message.errors.minlength || message.errors.maxlength" >Votre message doit contenir entre 10 et 5000 caractères. </div>
+            </div>
         </div>
 
-      <button type="submit" class="btn btn-default waves-light" mdbWavesEffect>Envoyer</button>
+      <button type="submit" class="btn btn-default waves-light" mdbWavesEffect [disabled]="!form.valid" >Envoyer</button>
 
       </form>
     </div>

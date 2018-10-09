@@ -2,6 +2,10 @@
 
 @import './../../colors.scss';
 
+h1, h3 {
+  font-family: 'Consolas' !important;
+}
+
 section{
   overflow: hidden;
 }
@@ -16,7 +20,6 @@ section{
 }
 
 .hsContent {
-  max-width: 750px;
   margin: -150px auto 0 auto;
   display: table-cell;
   vertical-align: middle;
