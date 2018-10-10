@@ -21,9 +21,7 @@ export class ContactFormService {
   }
 
   sendContact(contactForm): Observable<any> {
-    return this.http.post(environment.serverUrl + '/email', contactForm, this.httpOptions).pipe(
-      tap(() => console.log('message sent'))
-    );
+    return this.http.post(environment.serverUrl + '/email', contactForm, this.httpOptions);
   }
 
 

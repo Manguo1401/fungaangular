@@ -1,5 +1,4 @@
 import { slideOnScroll, ourServiceAnimation } from './../animations/SlideInOnScroll';
-import { trigger, transition, style, animate, useAnimation } from '@angular/animations';
 import { Component, OnInit, AfterViewInit, ElementRef, HostListener, ViewChild } from '@angular/core';
 
 declare var skrollr: any;
@@ -16,8 +15,8 @@ declare var skrollr: any;
 export class HomeComponent implements OnInit, AfterViewInit {
   title = '';
   subtitle = '';
-  realTitle = 'FUNGA, développeurs web fullstack';
-  realSubtitle = 'Louis et Aaron créeront votre site selon vos envies';
+  realTitle = 'FUNGA, développeurs web indépendants';
+  realSubtitle = 'Créons ensemble selon vos envies';
 
 
   @ViewChild('ourServices') ourServicesEl: ElementRef;
@@ -31,7 +30,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
     const componentOffset = component.offsetTop;
     const scrollPosition = window.pageYOffset;
     const activationHeight = component.clientHeight * 1.7;
-    console.log(this.ourServicesState);
 
     if ( (scrollPosition + activationHeight >= componentOffset) ) {
       this.ourServicesState = 'show';
@@ -48,7 +46,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
       if ( _this.title === _this.realTitle && _this.subtitle === _this.realSubtitle ) {
         clearInterval(interval);
       }
-      console.log(_this.title.length);
     }, 50);
   }
 
