@@ -5,7 +5,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { HttpClientModule } from '@angular/common/http';
-import { AngularFireModule } from '@angular/fire';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -16,7 +15,6 @@ import { NavbarComponent } from './parts/navbar/navbar.component';
 import { ExamplesComponent } from './examples/examples.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactFormComponent } from './forms/contact-form/contact-form.component';
-import { environment } from './../environments/environment';
 
 @NgModule({
   declarations: [
@@ -35,8 +33,7 @@ import { environment } from './../environments/environment';
     FormsModule,
     MDBBootstrapModule.forRoot(),
     BrowserAnimationsModule,
-    HttpClientModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    HttpClientModule
   ],
   providers: [
     ContactFormService
