@@ -15,7 +15,7 @@ declare var skrollr: any;
 export class HomeComponent implements OnInit, AfterViewInit {
   title = '';
   subtitle = '';
-  realTitle = 'FUNGA, développeurs web indépendants';
+  realTitle = 'développeurs web indépendants';
   realSubtitle = 'Créons ensemble selon vos envies';
 
 
@@ -64,7 +64,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     const upperLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     let randomString = '';
     for ( let i = 0; i < answerString.length; i++) {
-      if ( answerString[i] === string[i] || Math.floor(Math.random() * 20 ) === 1 ) {
+      if ( answerString[i] === string[i] || Math.floor(Math.random() * 12 ) === 1 ) {
         randomString += answerString[i];
       } else if ( letters.indexOf(answerString[i]) > -1 ) {
         randomString += letters.charAt(Math.floor(Math.random() * letters.length));

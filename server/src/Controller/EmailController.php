@@ -32,7 +32,8 @@ class EmailController extends FOSRestController
                     'emails/contact.html.twig',
                     [
                         'message' => $data["message"],
-                        'name' => $data["name"]
+                        'name' => $data["name"],
+                        'email' => $data["email"]
                     ]
                 ),
                 'text/html'
