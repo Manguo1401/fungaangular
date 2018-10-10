@@ -1,8 +1,10 @@
+import { ContactFormService } from './services/contact-form.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -30,9 +32,12 @@ import { ContactFormComponent } from './forms/contact-form/contact-form.componen
     AppRoutingModule,
     FormsModule,
     MDBBootstrapModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    ContactFormService
+  ],
   schemas: [NO_ERRORS_SCHEMA],
   bootstrap: [AppComponent]
 })

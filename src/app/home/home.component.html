@@ -2,56 +2,23 @@
 <section id="slide-1" class="homeSlide">
   <div class="bcg" data-start="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
     <div class="hsContainer">
-      <div class="hsContent pagetitle" data-start="top:500px;opacity: 1;" data-500-start="opacity: 1;top:800px" data--40-top="opacity: 0;top:800px" data-anchor-target="#slide-1 h2">
+      <div class="hsContent pagetitle">
         <div class="texttitle">
-          <h1>FUNGA, développeurs web fullstack</h1>
-          <h2>Louis et Aaron créeront votre site selon vos envies</h2>
+          <h1>{{title}}</h1>
+          <div  class="titleshadow2" >&nbsp;</div>
+          <h3>{{subtitle}}</h3>
         </div>
-        <div  class="titleshadow2" >&nbsp;</div>
       </div>
-    </div>
-    
-    <div class="bulle" data-200-top="left:15%;bottom:5%;opacity:1;transform:scale(1)" data-1000-bottom="bottom:110%;opacity:0;transform:scale(0.1)" >
-      <!--<div class="bulle" data-top-bottom="left:35%;bottom[cubic]:100%;height:2000px" data-100-bottom="left: 60%;bottom:0%;height:0px"> -->
-      <div class="bulletitle">
-        HTML 5
-      </div>
-      <div class="bulleshadow">&nbsp;</div>
-    </div>
-    <div class="bulle" data-220-top="left:25%;bottom[quadratic]:0%;" data-600-bottom="bottom:100%;" >
-      <div class="bulletitle">
-        ANGULAR 6
-      </div>
-      <div class="bulleshadow" data-200-top="box-shadow:0px 0px 80px 50px rgb(255,255,255);" data-600-bottom="box-shadow:0px 0px 60px 0px rgb(255,255,0);">&nbsp;</div>
-    </div>
-    <div class="bulle" data-200-top="left:75%;bottom[quadratic]:5%;" data-600-bottom="bottom:120%;" >
-    <!-- <div class="bulle" data-500-top="left:75%;bottom[quadratic]:0%;transform:scale(1) rotate(1440deg);opacity:1;" data-300-bottom="left:85%;bottom:100%;transform:scale(0.1) rotate(3240deg);opacity:0;" > -->
-      <div class="bulletitle">
-        PHP 7
-      </div>
-      <div class="bulleshadow" data-200-top="box-shadow:0px 0px 80px 50px rgb(255,255,255);" data-600-bottom="box-shadow:0px 0px 60px 0px rgb(0,255,255);">&nbsp;</div>
-    </div>
-    <div class="bulle" data-200-top="left:85%;bottom:10%;" data-600-bottom="bottom:60%;" >
-    <!-- <div class="bulle" data-200-top="left:90%;bottom[cubic]:0%;" data-200-bottom="left: 10%;bottom:50%;"> -->
-      <div class="bulletitle">
-        CSS 3
-      </div>
-      <div class="bulleshadow" data-200-top="box-shadow:0px 0px 100px 50px rgb(150,150,0);" data-200-bottom="box-shadow:0px 0px 60px 10px rgb(255,200,200);">&nbsp;</div>
     </div>
   </div>
 </section>
-<!-- <hr data-300="background-color:rgb(0,0,255);transform:rotate(0deg);bottom:0%;" data-500="background-color:rgb(255,0,0);transform:rotate(360deg);bottom[quadratic]:100%;" data-600="width:2%;" data-800="width:100%;" style="position:relative; margin: auto; width:2%"/> -->
-<!-- <hr data-0="background-color:rgb(0,0,255);transform[bounce]:rotate(0deg);" data-500="background-color:rgb(255,0,0);transform[bounce]:rotate(360deg);"/>
-<div style="position:relative;" data-0="left:0px;" data-100="left:100px;">bacon</div>
-<div data-100="background-color:rgb(0,0,255);left:0%;" data-200="top:0%;" data-300="left:50%;" data-400="background-color:rgb(255,0,0);top:50%;" style="position:relative; width:20%">1111</div>
-<div data-100="background-color:rgb(255,0,0);left:0%;top:0%;" data-100="left:0%;top:0%;" data-300="background-color:rgb(0,0,255);left:50%;top:0%;" data-400="left:50%;top:50%;" style="position:relative; width:20%">22222</div>
--->
+
 <section id="slide-2">
   <div class="center py-3">
-    <h1 style="position:relative;" data-100-bottom="left:-2000px;" data-0-bottom="left:0px;">Nos services</h1>
+    <h1>Nos services</h1>
   </div>
-  <div class="row mx-1 justify-content-md-center">
-    <div style="position:relative;" data-100-bottom="left:-2000px;" data--50-bottom="left:0px;" class="col-sm-6 col-xl-3 mb-4">
+  <div #ourServices [@slideOnScroll]="ourServicesState" class="row mx-1 justify-content-md-center">
+    <div class="col-sm-6 col-xl-3 mb-4" [@ourServiceAnimation]="ourServicesState">
       <div class="card h-100">
         <div class="card-body">
             <div class="icon-title"><i class="fas fa-flask"></i></div>
@@ -61,7 +28,7 @@
         </div>
       </div>
     </div>
-    <div style="position:relative;" data-100-bottom="left:-2000px;" data--30-bottom="left:0px;"  class="col-sm-6 col-xl-3 mb-4">
+    <div  class="col-sm-6 col-xl-3 mb-4" [@ourServiceAnimation]="ourServicesState">
       <div class="card h-100">
         <div class="card-body">
           <div class="icon-title"><i class="fas fa-pencil-alt"></i></div>
@@ -71,7 +38,7 @@
         </div>
       </div>
     </div>
-    <div style="position:relative;" data-100-bottom="left:-2000px;" data--10-bottom="left:0px;"  class="col-sm-6 col-xl-3 mb-4">
+    <div class="col-sm-6 col-xl-3 mb-4" [@ourServiceAnimation]="ourServicesState">
       <div class="card h-100">
         <div class="card-body">
           <div class="icon-title"><i class="fas fa-code"></i></div>
@@ -82,7 +49,7 @@
       </div>
     </div>
     <div class="w-100 d-none d-xl-block"></div>
-    <div style="position:relative;" data-100-bottom="left:-2000px;" data--40-bottom="left:0px;"  class="col-sm-6 col-xl-3 mb-4">
+    <div  class="col-sm-6 col-xl-3 mb-4" [@ourServiceAnimation]="ourServicesState">
       <div class="card h-100">
         <div class="card-body">
           <div class="icon-title"><i class="fas fa-cloud"></i></div>
@@ -92,7 +59,7 @@
         </div>
       </div>
     </div>
-    <div style="position:relative;" data-100-bottom="left:-2000px;" data--30-bottom="left:0px;"  class="col-sm-6 col-xl-3 mb-4">
+    <div  class="col-sm-6 col-xl-3 mb-4" [@ourServiceAnimation]="ourServicesState">
       <div class="card h-100">
         <div class="card-body">
           <div class="icon-title"><i class="fas fa-cogs"></i></div>
@@ -102,7 +69,7 @@
         </div>
       </div>
     </div>
-    <div style="position:relative;" data-100-bottom="left:-2000px;" data--10-bottom="left:0px;"  class="col-sm-6 col-xl-3 mb-4">
+    <div class="col-sm-6 col-xl-3 mb-4" [@ourServiceAnimation]="ourServicesState">
       <div class="card h-100">
         <div class="card-body">
           <div class="icon-title"><i class="fas fa-search"></i></div>
@@ -116,13 +83,13 @@
 </section>
 
 <section id="slide-3" class="homeSlide">
-  <div class="bcg" data-center="background-position: 50% 0px;" data-bottom-top="background-position: 50% 300px;" data-top-bottom="background-position: 50% -300px;" data-anchor-target="#slide-3">
+  <div class="bcg" data-start="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-3">
     <div class="center">
       <h1 class="devs-title" >Nos derniers développements</h1>
       <div  class="titleshadow2" >&nbsp;</div>
     </div>
     <div class="card-container row">
-      <div class="col-sm-4">
+      <div class="card-sizer col-lg-4 col-md-6 col-sm-12">
         <div class="card project-card">
           <div class="img-container">
             <a href="https://tsiono.fr/">
@@ -157,7 +124,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
+      <div class="card-sizer col-lg-4 col-md-6 col-sm-12">
         <div class="card project-card">
           <div class="img-container">
             <a href="http://www.open-sciences-participatives.org">
@@ -197,6 +164,6 @@
     </div>
   </div>
 </section>
-<section style="position:relative;" data-200-bottom="left:-2000px;" data-100-bottom="left:0px;">
+<section style="position:relative;">
   <app-contact-form></app-contact-form>
 </section>
